@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llt_main_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_camera_height"
+        android:background="@color/color_frg_back"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/llt_main_menu"
+        android:padding="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_frg_back"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:id="@+id/llt_main_flash"
+            style="@style/llt_menu_item">
+            <ImageView
+                android:id="@+id/img_main_flash"
+                style="@style/img_main_item"
+                android:src="@drawable/ico_flash"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_main_focus"
+            style="@style/llt_menu_item">
+            <ImageView
+                android:id="@+id/img_main_focus"
+                style="@style/img_main_item"
+                android:src="@drawable/ico_focus_auto"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_main_face"
+            style="@style/llt_menu_item">
+            <ImageView
+                android:id="@+id/img_main_face"
+                style="@style/img_main_item"
+                android:src="@drawable/ico_face"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_main_ar"
+            style="@style/llt_menu_item">
+            <ImageView
+                android:id="@+id/img_main_ar"
+                style="@style/img_main_item"
+                android:src="@drawable/ico_ar"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_main_switch"
+            style="@style/llt_menu_item">
+            <ImageView
+                android:id="@+id/img_main_switch"
+                style="@style/img_main_item"
+                android:src="@drawable/ico_switch"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llt_main_flash_col"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:background="@color/color_frg_back">
+
+        <LinearLayout
+            android:id="@+id/llt_main_flash_auto"
+            style="@style/llt_menu_item">
+            <ImageView
+                android:id="@+id/img_main_flash_auto"
+                style="@style/img_main_item"
+                android:src="@drawable/ico_flash_auto_sel"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_main_flash_on"
+            style="@style/llt_menu_item">
+            <ImageView
+                android:id="@+id/img_main_flash_on"
+                style="@style/img_main_item"
+                android:src="@drawable/ico_flash_on"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_main_flash_off"
+            style="@style/llt_menu_item">
+            <ImageView
+                android:id="@+id/img_main_flash_off"
+                style="@style/img_main_item"
+                android:src="@drawable/ico_flash_off"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_main_flash_toggle"
+            style="@style/llt_menu_item">
+            <ImageView
+                android:id="@+id/img_main_flash_light"
+                style="@style/img_main_item"
+                android:src="@drawable/ico_flash_light"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llt_main_focus_col"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:background="@color/color_frg_back"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/llt_main_focus_auto"
+            style="@style/llt_menu_item">
+            <ImageView
+                android:id="@+id/img_main_focus_auto"
+                style="@style/img_main_item"
+                android:src="@drawable/ico_focus_auto_sel"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_main_focus_infinit"
+            style="@style/llt_menu_item">
+            <ImageView
+                android:id="@+id/img_main_focus_infinite"
+                style="@style/img_main_item"
+                android:src="@drawable/ico_focus_infinit"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_main_focus_macro"
+            style="@style/llt_menu_item">
+            <ImageView
+                android:id="@+id/img_main_focus_macro"
+                style="@style/img_main_item"
+                android:src="@drawable/ico_focus_macro"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+        <SeekBar
+            android:id="@+id/skb_main_scale"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:progressDrawable="@drawable/back_seekbar_progress"
+            android:thumb="@drawable/back_seekbar_thumb"
+            android:rotation="270"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llt_main_face_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+        <SeekBar
+            android:id="@+id/skb_main_face"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:progressDrawable="@drawable/back_seekbar_progress"
+            android:thumb="@drawable/back_seekbar_thumb"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llt_main_ar_effect"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_main_llt_col"
+        android:background="@color/color_frg_back"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcy_main_effect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5.0dp"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llt_main_face_effect"
+        android:padding="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_frg_back"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llt_main_face_rosy"
+            style="@style/llt_menu_item"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/img_main_face_rosy"
+                style="@style/img_main_item"
+                android:src="@drawable/ico_face"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_main_face_brasion"
+            style="@style/llt_menu_item">
+            <ImageView
+                android:id="@+id/img_main_face_brasion"
+                style="@style/img_main_item"
+                android:src="@drawable/ico_smoothly"/>
+            <TextView
+                android:id="@+id/txt_main_face_smoothly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:text="@string/filter_face_smooth"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_main_face_white"
+            style="@style/llt_menu_item">
+            <ImageView
+                android:id="@+id/img_main_face_white"
+                style="@style/img_main_item"
+                android:src="@drawable/ico_whitening"/>
+            <TextView
+                android:id="@+id/txt_main_face_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:text="@string/filter_face_white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_main_face_lifting"
+            style="@style/llt_menu_item">
+            <ImageView
+                android:id="@+id/img_main_face_lifting"
+                style="@style/img_main_item"
+                android:src="@drawable/ico_slimming"/>
+            <TextView
+                android:id="@+id/txt_main_face_slimming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:text="@string/filter_face_slim"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_main_face_eyes"
+            style="@style/llt_menu_item">
+            <ImageView
+                android:id="@+id/img_main_face_eyes"
+                style="@style/img_main_item"
+                android:src="@drawable/ico_bigeye"/>
+            <TextView
+                android:id="@+id/txt_main_face_bigeye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:text="@string/filter_face_bigeyes"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:background="@color/color_frg_back"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#80ffffff">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_main_shutter"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ico_shutter"/>
+
+        <LinearLayout
+            android:id="@+id/llt_main_video"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ico_camera"
+                android:alpha="0.5"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

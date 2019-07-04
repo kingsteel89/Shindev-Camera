@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rad_cross_pattern"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rab_cross_none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/frg_none"
+            android:paddingLeft="10dip"
+            android:textSize="16dp"/>
+        <RadioButton
+            android:id="@+id/rab_cross_rect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dia_rect_pattern"
+            android:paddingLeft="10dip"
+            android:textSize="16dp"/>
+        <RadioButton
+            android:id="@+id/rab_cross_gold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dia_gold_rate_pattern"
+            android:paddingLeft="10dip"
+            android:textSize="16dp"/>
+        <RadioButton
+            android:id="@+id/rab_cross_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dia_left_rate_pattern"
+            android:paddingLeft="10dip"
+            android:textSize="16dp"/>
+        <RadioButton
+            android:id="@+id/rab_cross_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dia_right_rate_pattern"
+            android:paddingLeft="10dip"
+            android:textSize="16dp"/>
+    </RadioGroup>
+
+</LinearLayout>

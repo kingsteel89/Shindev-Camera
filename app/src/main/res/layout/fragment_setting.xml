@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_frg_back"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:gravity="center">
+
+        <TextView
+            style="@style/txt_title"
+            android:text="@string/frg_setting_title"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/llt_setting_header">
+
+                <TextView
+                    style="@style/txt_setting_header"
+                    android:text="@string/frg_setting_common" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/llt_setting_content">
+
+                <ImageView
+                    style="@style/img_setting_content"
+                    android:src="@drawable/ico_sd_card" />
+
+                <LinearLayout style="@style/llt_setting_content_spec" >
+                    <TextView
+                        style="@style/txt_setting_content"
+                        android:text="@string/frg_setting_sd_card_save" />
+                    <TextView
+                        style="@style/txt_setting_content_detail"
+                        android:text="@string/frg_setting_sd_detail" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/swt_setting_sdcard"
+                    style="@style/swi_setting_content" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/llt_setting_spec" />
+
+            <LinearLayout style="@style/llt_setting_content">
+
+                <ImageView
+                    style="@style/img_setting_content"
+                    android:src="@drawable/ico_shutter_sound" />
+
+                <LinearLayout style="@style/llt_setting_content_spec" >
+                    <TextView
+                        style="@style/txt_setting_content"
+                        android:text="@string/frg_setting_shutter_sound" />
+
+                    <TextView
+                        style="@style/txt_setting_content_detail"
+                        android:text="@string/frg_setting_shutter_sound" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/swt_setting_shutter_sound"
+                    style="@style/swi_setting_content" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/llt_setting_spec" />
+
+            <LinearLayout
+                android:id="@+id/llt_setting_shutter_delay"
+                style="@style/llt_setting_content">
+
+                <ImageView
+                    style="@style/img_setting_content"
+                    android:src="@drawable/ico_shutter_delay" />
+
+                <LinearLayout style="@style/llt_setting_content_spec" >
+                    <TextView
+                        style="@style/txt_setting_content"
+                        android:text="@string/frg_setting_shutter_delay" />
+
+                    <TextView
+                        style="@style/txt_setting_content_detail"
+                        android:text="@string/frg_setting_shutter_delay" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_setting_shutter_delay"
+                    style="@style/txt_setting_content_hint"
+                    android:alpha="0.5"
+                    android:text="@string/frg_none"/>
+
+                <ImageView
+                    style="@style/img_setting_content_arror"
+                    android:src="@drawable/ico_arrow" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/llt_setting_spec" />
+
+            <LinearLayout
+                android:id="@+id/llt_setting_sound_key"
+                style="@style/llt_setting_content">
+
+                <ImageView
+                    style="@style/img_setting_content"
+                    android:src="@drawable/ico_sound_key" />
+
+                <LinearLayout style="@style/llt_setting_content_spec" >
+                    <TextView
+                        style="@style/txt_setting_content"
+                        android:text="@string/frg_setting_sound_key" />
+
+                    <TextView
+                        style="@style/txt_setting_content_detail"
+                        android:text="@string/frg_setting_sound_key" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_setting_sound_key"
+                    style="@style/txt_setting_content_hint"
+                    android:text="@string/frg_default"
+                    android:alpha="0.5"/>
+
+                <ImageView
+                    style="@style/img_setting_content_arror"
+                    android:src="@drawable/ico_arrow" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/llt_setting_header">
+
+                <TextView
+                    style="@style/txt_setting_header"
+                    android:text="@string/frg_setting_photo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llt_setting_photo_size"
+                style="@style/llt_setting_content">
+
+                <ImageView
+                    style="@style/img_setting_content"
+                    android:src="@drawable/ico_photo_size" />
+
+                <TextView
+                    style="@style/txt_setting_content"
+                    android:text="@string/frg_setting_photo_size" />
+
+                <LinearLayout style="@style/llt_setting_content_spec" />
+
+                <TextView
+                    android:id="@+id/txt_setting_photo_size"
+                    style="@style/txt_setting_content_hint"
+                    android:text="@string/dia_16M"
+                    android:alpha="0.5"/>
+
+                <ImageView
+                    style="@style/img_setting_content_arror"
+                    android:src="@drawable/ico_arrow" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/llt_setting_spec" />
+
+            <LinearLayout
+                android:id="@+id/llt_setting_cross_pattern"
+                style="@style/llt_setting_content">
+
+                <ImageView
+                    style="@style/img_setting_content"
+                    android:src="@drawable/ico_pattern" />
+
+                <LinearLayout style="@style/llt_setting_content_spec" >
+                    <TextView
+                        style="@style/txt_setting_content"
+                        android:text="@string/frg_setting_cross_pattern" />
+
+                    <TextView
+                        style="@style/txt_setting_content_detail"
+                        android:text="@string/frg_setting_cross_pattern" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_setting_cross_pattern"
+                    style="@style/txt_setting_content_hint"
+                    android:text="@string/frg_none"
+                    android:alpha="0.5"/>
+
+                <ImageView
+                    style="@style/img_setting_content_arror"
+                    android:src="@drawable/ico_arrow" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/llt_setting_spec" />
+
+            <LinearLayout style="@style/llt_setting_content">
+
+                <ImageView
+                    style="@style/img_setting_content"
+                    android:src="@drawable/ico_mirror" />
+
+                <LinearLayout style="@style/llt_setting_content_spec" >
+                    <TextView
+                        style="@style/txt_setting_content"
+                        android:text="@string/frg_setting_mirror_effect" />
+
+                    <TextView
+                        style="@style/txt_setting_content_detail"
+                        android:text="@string/frg_setting_mirror_detail" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/swt_setting_mirror_effect"
+                    style="@style/swi_setting_content" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/llt_setting_spec" />
+
+            <LinearLayout style="@style/llt_setting_content">
+
+                <ImageView
+                    style="@style/img_setting_content"
+                    android:src="@drawable/ico_touch_focus" />
+
+                <LinearLayout style="@style/llt_setting_content_spec" >
+
+                    <TextView
+                        style="@style/txt_setting_content"
+                        android:text="@string/frg_setting_touch_focus" />
+
+                    <TextView
+                        style="@style/txt_setting_content_detail"
+                        android:text="@string/frg_setting_touch_focus" />
+
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/swt_setting_touch_effect"
+                    style="@style/swi_setting_content" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/llt_setting_header">
+
+                <TextView
+                    style="@style/txt_setting_header"
+                    android:text="@string/frg_setting_video" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llt_setting_video_size"
+                style="@style/llt_setting_content">
+
+                <ImageView
+                    style="@style/img_setting_content"
+                    android:src="@drawable/ico_photo_size" />
+
+                <TextView
+                    style="@style/txt_setting_content"
+                    android:text="@string/frg_setting_video_size" />
+
+                <LinearLayout style="@style/llt_setting_content_spec" />
+
+                <TextView
+                    android:id="@+id/txt_setting_video_size"
+                    style="@style/txt_setting_content_hint"
+                    android:text="@string/dia_16M"
+                    android:alpha="0.5"/>
+
+                <ImageView
+                    style="@style/img_setting_content_arror"
+                    android:src="@drawable/ico_arrow" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/llt_setting_spec" />
+
+            <LinearLayout style="@style/llt_setting_content">
+
+                <ImageView
+                    style="@style/img_setting_content"
+                    android:src="@drawable/ico_sound_record" />
+
+                <LinearLayout style="@style/llt_setting_content_spec" >
+                    <TextView
+                        style="@style/txt_setting_content"
+                        android:text="@string/frg_setting_sound_record" />
+
+                    <TextView
+                        style="@style/txt_setting_content_detail"
+                        android:text="@string/frg_setting_sound_record" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/swt_setting_sound_record"
+                    style="@style/swi_setting_content" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/llt_setting_header">
+
+                <TextView
+                    style="@style/txt_setting_header"
+                    android:text="@string/frg_setting_reset" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llt_setting_reset"
+                style="@style/llt_setting_content">
+
+                <ImageView
+                    style="@style/img_setting_content"
+                    android:src="@drawable/ico_reset_setting" />
+
+                <TextView
+                    style="@style/txt_setting_content"
+                    android:text="@string/frg_setting_reset_setting" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

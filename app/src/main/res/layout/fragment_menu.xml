@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_frg_back"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/llt_menu_filter_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/llt_menu_filter_close"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ico_close"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <LinearLayout
+                style="@style/llt_menu_filter_item"
+                android:id="@+id/llt_filter_item_01" >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/filter_thumb_none"/>
+                <TextView
+                    android:id="@+id/txt_menu_filter_none"
+                    style="@style/txt_filter_name"
+                    android:text="@string/filter_name_none"/>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/llt_menu_filter_item"
+                android:id="@+id/llt_filter_item_02" >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/filter_thumb_inkwell"/>
+                <TextView
+                    android:id="@+id/txt_menu_filter_inkwell"
+                    style="@style/txt_filter_name"
+                    android:text="@string/filter_name_inkwell"/>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/llt_menu_filter_item"
+                android:id="@+id/llt_filter_item_03" >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/filter_thumb_sketch"/>
+                <TextView
+                    android:id="@+id/txt_menu_filter_sketch"
+                    style="@style/txt_filter_name"
+                    android:text="@string/filter_name_sketch"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <LinearLayout
+                style="@style/llt_menu_filter_item"
+                android:id="@+id/llt_filter_item_04" >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/filter_thumb_fairytale"/>
+                <TextView
+                    android:id="@+id/txt_menu_filter_fairytale"
+                    style="@style/txt_filter_name"
+                    android:text="@string/filter_name_fairytale"/>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/llt_menu_filter_item"
+                android:id="@+id/llt_filter_item_05" >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/filter_thumb_nostalgia"/>
+                <TextView
+                    android:id="@+id/txt_menu_filter_nostalgia"
+                    style="@style/txt_filter_name"
+                    android:text="@string/filter_name_nostalgia"/>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/llt_menu_filter_item"
+                android:id="@+id/llt_filter_item_06" >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/filter_thumb_cool"/>
+                <TextView
+                    android:id="@+id/txt_menu_filter_cool"
+                    style="@style/txt_filter_name"
+                    android:text="@string/filter_name_cool"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <LinearLayout
+                style="@style/llt_menu_filter_item"
+                android:id="@+id/llt_filter_item_07" >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/filter_thumb_earlybird"/>
+                <TextView
+                    android:id="@+id/txt_menu_filter_earlybird"
+                    style="@style/txt_filter_name"
+                    android:text="@string/filter_name_earlybird"/>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/llt_menu_filter_item"
+                android:id="@+id/llt_filter_item_08" >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/filter_thumb_toastero"/>
+                <TextView
+                    android:id="@+id/txt_menu_filter_toastero"
+                    style="@style/txt_filter_name"
+                    android:text="@string/filter_name_toastero"/>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/llt_menu_filter_item"
+                android:id="@+id/llt_filter_item_09" >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/filter_thumb_walden"/>
+                <TextView
+                    android:id="@+id/txt_menu_filter_walden"
+                    style="@style/txt_filter_name"
+                    android:text="@string/filter_name_walden"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llt_menu_mode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:gravity="center">
+
+            <TextView
+                style="@style/txt_title"
+                android:text="@string/frg_menu_title"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_menu_llt_height"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/llt_menu_normal"
+                style="@style/llt_menu_item">
+                <ImageView
+                    android:id="@+id/img_menu_normal"
+                    style="@style/img_menu_item"
+                    android:src="@drawable/ico_photo"/>
+                <TextView
+                    android:id="@+id/txt_menu_normal"
+                    style="@style/txt_menu_item"
+                    android:text="@string/frg_menu_photo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llt_menu_pro"
+                style="@style/llt_menu_item">
+                <ImageView
+                    android:id="@+id/img_menu_pro"
+                    style="@style/img_menu_item"
+                    android:src="@drawable/ico_photo_pro"/>
+                <TextView
+                    android:id="@+id/txt_menu_pro"
+                    style="@style/txt_menu_item"
+                    android:text="@string/frg_menu_photo_pro" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llt_menu_camera"
+                style="@style/llt_menu_item">
+                <ImageView
+                    android:id="@+id/img_menu_camera"
+                    style="@style/img_menu_item"
+                    android:src="@drawable/ico_camera"/>
+                <TextView
+                    android:id="@+id/txt_menu_camera"
+                    style="@style/txt_menu_item"
+                    android:text="@string/frg_menu_camera" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_menu_llt_height"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/llt_menu_night"
+                style="@style/llt_menu_item">
+                <ImageView
+                    android:id="@+id/img_menu_night"
+                    style="@style/img_menu_item"
+                    android:src="@drawable/ico_night"/>
+                <TextView
+                    android:id="@+id/txt_menu_night"
+                    style="@style/txt_menu_item"
+                    android:text="@string/frg_menu_night_mode" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llt_menu_hdr"
+                style="@style/llt_menu_item">
+                <ImageView
+                    android:id="@+id/img_menu_hdr"
+                    style="@style/img_menu_item"
+                    android:src="@drawable/ico_hdr"/>
+                <TextView
+                    android:id="@+id/txt_menu_hdr"
+                    style="@style/txt_menu_item"
+                    android:text="@string/frg_menu_hdr_photo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llt_menu_filter"
+                style="@style/llt_menu_item">
+                <ImageView
+                    android:id="@+id/img_menu_filter"
+                    style="@style/img_menu_item"
+                    android:src="@drawable/ico_filter"/>
+                <TextView
+                    android:id="@+id/txt_menu_filter"
+                    style="@style/txt_menu_item"
+                    android:text="@string/frg_menu_filter_effect" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_menu_llt_height"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/llt_menu_landscape"
+                style="@style/llt_menu_item">
+                <ImageView
+                    android:id="@+id/img_menu_landscape"
+                    style="@style/img_menu_item"
+                    android:src="@drawable/ico_landscape"/>
+                <TextView
+                    android:id="@+id/txt_menu_landscape"
+                    style="@style/txt_menu_item"
+                    android:text="@string/frg_menu_landscape" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

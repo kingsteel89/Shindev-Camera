@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rad_sound_key"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rab_sound_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/frg_default"
+            android:paddingLeft="10dip"
+            android:textSize="16dp"/>
+        <RadioButton
+            android:id="@+id/rab_sound_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/frg_setting_video"
+            android:paddingLeft="10dip"
+            android:textSize="16dp"/>
+        <RadioButton
+            android:id="@+id/rab_sound_zoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dia_zoom"
+            android:paddingLeft="10dip"
+            android:textSize="16dp"/>
+    </RadioGroup>
+
+</LinearLayout>

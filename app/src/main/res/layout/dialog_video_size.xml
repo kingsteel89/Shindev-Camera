@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rad_video_size"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rab_video_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dia_16M"
+            android:paddingLeft="10dip"
+            android:textSize="16dp"/>
+        <RadioButton
+            android:id="@+id/rab_video_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dia_12M"
+            android:paddingLeft="10dip"
+            android:textSize="16dp"/>
+        <RadioButton
+            android:id="@+id/rab_video_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dia_8M"
+            android:paddingLeft="10dip"
+            android:textSize="16dp"/>
+        <RadioButton
+            android:id="@+id/rab_video_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dia_4M"
+            android:paddingLeft="10dip"
+            android:textSize="16dp"/>
+        <RadioButton
+            android:id="@+id/rab_video_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dia_2M"
+            android:paddingLeft="10dip"
+            android:textSize="16dp"/>
+    </RadioGroup>
+
+</LinearLayout>
